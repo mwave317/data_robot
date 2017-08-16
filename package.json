@@ -1,0 +1,24 @@
+{
+  "name": "robot_job",
+  "version": "1.0.0",
+  "description": "Job Search",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwave317/data_robot.git"
+  },
+  "author": "Ken Coppola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwave317/data_robot/issues"
+  },
+  "homepage": "https://github.com/mwave317/data_robot#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "express-mustache": "^1.0.3",
+    "mustache-express": "^1.2.5"
+  }
+}
