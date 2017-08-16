@@ -6,17 +6,15 @@ let robots;
 
 const mustacheExpress = require('mustache-express');
 app.engine('mustache', mustacheExpress());
-
+app.set('view engine', 'mustache');
+app.use(express.static(__dirname + '/css'));
 fs.readFile('users.json',  function (err, data) {
   robots = JSON.parse(data);
   // console.log(robots);
 });
-
 app.get('/users', function(req, res){
   // fs.readFile('users.json',  function (err, data) {
-  res.render('index.mustache', {
-    users: robots,
-  });
+  res.render('index.mustache', robots);
 });
 
 app.listen(3000, function () {
