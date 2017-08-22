@@ -9,15 +9,15 @@
   </head>
     <body>
       <header>
-        <a href="/looking">Skilled but still looking for work</a>
+        <a href='./users'>Currently Employed</a>
       </header>
       <section>
        {{#people}}
-            <figure>
-              <img src="{{avatar}}"</img>
-              <h3>{{name}}</h3>
-              <p>{{job}}{{company}}<p>
-            </figure>
+        <figure>
+          <img src="{{avatar}}"</img>
+          <h3>{{name}}</h3>
+          <p class="outofwork">Looking for Work</p>
+        </figure>
       {{/people}}
      </section>
 
